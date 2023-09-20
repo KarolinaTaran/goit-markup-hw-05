@@ -578,7 +578,13 @@ a.list-header.current {
 
 .form {
   display: flex;
-  display: block;
+  flex-direction: column;
+  gap: 16px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .btn-subscribe {
