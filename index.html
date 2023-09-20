@@ -354,6 +354,7 @@
       </div>
     </div>
   </footer>
+  <!-- Modal -->
   <div class="backdrop is-open visually-hidden">
     <div class="modal">
       <button class="modal-close" type="button">
@@ -362,43 +363,35 @@
         </svg>
       </button>
       <p class="backdrop-heading">Leave your contacts and we will call you back</p>
-      <div class="form-element">
-        <ul>
-          <li>
-            <label class="label-form" for="name">Name</label>
-            <div class="input-wrap">
-              <input class="input-personal-info" id="name" type="text" name="user_name" />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-              </svg>
-            </div>
-          </li>
-          <li>
-            <label class="label-form" for="tel">Phone</label>
-            <div class="input-wrap">
-              <input class="input-personal-info" id="tel" type="tel" name="user_number">
-              <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-              </svg>
-            </div>
-          </li>
-          <li>
-            <label class="label-form" for="mail">Email</label>
-            <div class="input-wrap">
-              <input class="input-personal-info" id="mail" type="email" name="user_email" />
-              <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-              </svg>
-            </div>
-          </li>
-          <li>
-            <label class="label-form" for="comment">Comment</label>
-            <div class="input-wrap">
-              <textarea id="comment" name="user_comment" placeholder="Text input"></textarea>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <form>
+        <div class="form-element">
+          <label class="label-form" for="user-name">Name</label>
+          <div class="input-wrap">
+            <input class="input-personal-info" id="user-name" type="text" name="user_name" />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </div>
+          <label class="label-form" for="tel">Phone</label>
+          <div class="input-wrap">
+            <input class="input-personal-info" id="tel" type="tel" name="user_number">
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </div>
+          <label class="label-form" for="mail">Email</label>
+          <div class="input-wrap">
+            <input class="input-personal-info" id="mail" type="email" name="user_email" />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </div>
+          <label class="label-form" for="comment">Comment</label>
+          <div class="input-wrap">
+            <textarea id="comment" name="user_comment" placeholder="Text input"></textarea>
+          </div>
+        </div>
+      </form>
       <div class="checkbox-container">
         <input id="privacy" type="checkbox" name="user-privacy" value="true" required />
         <label for="privacy" class="label-checkbox">
