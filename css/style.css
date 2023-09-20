@@ -516,6 +516,9 @@ a.list-header.current {
   margin-bottom: 16px;
 }
 
+.form-subscribe {
+  display: flex;
+}
 
 
 .icons-inside-list-footer {
@@ -571,38 +574,43 @@ a.list-header.current {
   width: 264px;
   height: 40px;
   border-radius: 4px;
-  background-color: inherit;
+  background-color: transparent;
   border: 1px solid #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   color: #FFFFFF;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+
+
 }
 
 .btn-subscribe {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   border-radius: 4px;
+  border: none;
   background: #4D5AE5;
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
+  cursor: pointer;
   padding: 0;
   fill: #FFFFFF;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -620,6 +628,10 @@ a.list-header.current {
   line-height: 24px;
   letter-spacing: 0.48px;
   padding-left: 16px;
+}
+
+.icon-btn-subscribe {
+  margin-left: 16px;
 }
 
 /* Modal */
